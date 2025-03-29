@@ -1,0 +1,30 @@
+
+GET http://localhost:3000/todos
+
+###
+
+POST http://localhost:3000/todos HTTP/1.1
+content-type: application/json
+
+{
+    "task": "learn rust",
+    "completed": false 
+}
+
+###
+
+GET http://localhost:3000/todos/67de2343e24d734c90837255 HTTP/1.1
+
+###
+PATCH http://localhost:3000/todos/67de2343e24d734c90837255 HTTP/1.1
+content-type: application/json
+
+{
+    "task": "by solar products",
+    "completed": false
+}
+
+
+###
+
+DELETE  http://localhost:3000/todos/67de27455dfe8df2c6f0defe HTTP/1.1
